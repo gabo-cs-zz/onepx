@@ -1,7 +1,7 @@
 <% model_name = @image.class.model_name.human %>
 <h1><%= t('.title', model: model_name) %></h1>
 
-<%= form_for @image, builder: CustomFormBuilder do |f| %>
+<%= form_for @image, builder: CustomFormBuilder, :html => {:multipart => true} do |f| %>
   <% f.form_error %>
   <div class="field">
     <%= f.label :name %>
@@ -21,8 +21,8 @@
     <%= f.text_field :tags_text %>
   </div>
   <div class="field">
-    <%= f.label :photo %>
-    <%= f.file_field :photo %>
+    <%= f.label :cover %>
+    <%= f.file_field :cover %>
   </div>
   <div class="field">
     <%= f.submit %>
