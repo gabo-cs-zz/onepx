@@ -1,0 +1,11 @@
+<h1><%= t('.title') %></h1>
+
+<!-- New Image Link -->
+<p><%= link_to t('.new_link'), new_image_path %></p>
+
+<!-- Images container -->
+<section class="images">
+  <!-- The partial name is not defined cause it's the same as the model.
+  The collection is 'images', so the partial would be '_image'-->
+  <%= render @images %>
+</section>

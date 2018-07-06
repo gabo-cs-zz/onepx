@@ -27,3 +27,6 @@
 # Ignore credentials and more.
 /config/database.yml
 .DS_Store
+# Ignore the images uploads
+public/uploads
+public/system
