@@ -19,6 +19,6 @@ class ImagesController < ApplicationController
 
   private
   def secure_params
-    params.require(:image).permit :name, :description, :category, :tags_text, :cover
+    params.require(:image).permit :name, :description, :category, :tags_text
   end
 end

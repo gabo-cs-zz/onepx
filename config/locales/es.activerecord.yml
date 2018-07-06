@@ -9,4 +9,4 @@ es:
         category: 'Categoría'
         tags: 'Etiquetas'
         tags_text: 'Etiquetas'
-        cover: 'Foto'
+        # cover: 'Foto'
